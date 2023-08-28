@@ -1,0 +1,97 @@
+body {
+  background-color: lightcoral;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-container {
+  width: 100%;
+  color: white;
+  padding: 20px;
+
+
+  position: relative; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#addTodo {
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-right: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px; 
+}
+
+li {
+  background-color: skyblue;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+li .todo-text {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+li .edit, li .delete {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+li .delete {
+  color: red;
+}
+.edit, .delete {
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+
+.edit img, .delete img {
+  width: 20px;   
+  height: 20px;   
+  object-fit: contain;
+  border: none;
+  background: none;
+  border-radius: 6px;
+
+}
